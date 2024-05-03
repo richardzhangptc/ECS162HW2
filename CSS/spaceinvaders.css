@@ -1,0 +1,91 @@
+
+body {
+	font-family: "Gill Sans", sans-serif;
+	color: #fff;
+	text-align: center;
+	font-size: 20px;
+	min-height: 100vh;
+
+
+    /*https://unsplash.com/photos/brown-sand-under-blue-sky-during-night-time-OtXJhYjbKeg*/
+    background-image: url('../Images/spaceinvadersbackground.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+main {
+	flex: 1;  
+}
+footer {
+	background-color: #363533;
+	position: fixed;
+	bottom: 0;
+	width: 100%; 
+	padding: 3px 0;
+
+}
+
+
+.grid-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+
+    align-items: center; /* Center vertically */
+}
+
+.grid {
+	width: 300px;
+	height: 300px;
+	border: solid rgb(255, 255, 255) 10px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.grid div {
+	width: 20px;
+	height: 20px;
+}
+
+/*SOURCE OF ART FROM https://github.com/Barqawiz/space-invaders-js/blob/main/assets*/
+.invader {
+	background-color: purple;
+	background-image: url('../Images/alien1.png');
+	border-radius: 10px;
+	background-size: contain;
+}
+
+
+/*SOURCE OF ART FROM https://github.com/Barqawiz/space-invaders-js/blob/main/assets*/
+.shooter {
+	background-image: url('../Images/spaceship.png');
+	background-color: green;
+	background-size: contain;
+}
+
+.laser {
+	background-color: orange;
+}
+
+.boom {
+	background-color: red;
+	border-radius: 10px;
+}
+
+/*for main menu button*/
+header img {
+	width: 150px;
+	height: auto;
+}
+	
+img:hover {
+	transform: scale(1.1);
+}
+
+@media (max-width: 700px) {
+	img {
+		float: none;
+		margin: 0 auto;
+	}
+}

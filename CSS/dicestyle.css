@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+  
+body {
+    font-family: "Gill Sans", sans-serif;
+    color: #fff;
+    
+    /*SOURCE: https://unsplash.com/photos/starry-sky-during-night-gOuKQTLs2lc*/
+    background-image: url('../Images/dicebackground.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  
+}
+  
+main {
+    max-width: 960px;
+    margin: 0 auto;
+    flex: 1;  
+}
+  
+header {
+    background-color: #363533;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+  
+h1 {
+    font-size: 36px;
+    text-shadow: 2px 2px 0 #000;
+    margin-bottom: 20px;
+}
+  
+h2 {
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+  
+.dice_buttons button {
+    padding: 15px 20px;
+    font-size: 15px;
+    margin: 5px;
+    background-color: #d8ae38;
+    color: #fff;
+    cursor: pointer;
+}
+  
+#result {
+    font-size: 48px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+  
+footer {
+      background-color: #363533;
+      color: #ffffff;
+      text-align: center;
+      padding: 20px;
+}
+  
+  /*for main menu button*/
+header img {
+    margin-top: 20px;
+    width: 150px;
+    height: auto;
+    margin-bottom: 10px;
+}
+  
+img:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 700px) {
+	img {
+		float: none;
+		margin: 0 auto;
+	}
+}

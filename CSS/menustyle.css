@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Gill Sans", sans-serif;
+    color: #fff;
+
+        /*https://unsplash.com/photos/galaxy-wallpaper-c9OCWLka764*/
+        background-image: url('../Images/spacebackground.jpeg');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+}
+
+header {
+    background-color: #363533;
+    padding: 20px;
+}
+
+main {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+    flex: 1;
+}
+
+h1 {
+    font-size: 36px;
+    text-shadow: 2px 2px 0 #000;
+}
+
+.games {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.game_se {
+    margin: 10px;
+    position: relative;
+    text-align: center;
+    transition: transform 0.3s;
+    margin-bottom: 40px;
+}
+
+.game_se:hover {
+    transform: scale(1.1);
+}
+
+.game_se img {
+    max-width: 200px;
+    height: auto;
+    border: 4px solid #fff;
+}
+
+.game_se h2 {
+    color: #fff;
+}
+
+footer {
+    background-color: #363533;
+    padding: 10px;
+    text-align: center;
+}
+
+@media (max-width: 700px) {
+	img {
+		float: none;
+		margin: 0 auto;
+	}
+}
