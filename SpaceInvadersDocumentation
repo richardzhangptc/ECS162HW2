@@ -1,0 +1,46 @@
+DOCUMENTATION FOR THE SPACE INVADERS GAME ADAPTED FROM https://github.com/kubowania/space-invaders
+
+Features of the game, its based off of space invaders:
+Player control: Move the shooter left and right using the left and right arrow keys.
+Shooting: Fire lasers upwards using the up arrow key. You can alsohold down this key
+Alien movement: Aliens move horizontally across the screen, changing direction when reaching the edges.
+Score tracking: Keep track of the player's score, aka how many aliens they have destroyed
+Game over/win detection: Display "GAME OVER" if the player's shooter collides with an alien or "YOU WIN" if all aliens are destroyed.
+
+
+Movement:
+Use the left and right arrow keys to move the shooter horizontally.
+The shooter cannot move beyond the edges of the game grid.
+
+
+Shooting:
+Press the up arrow key to shoot lasers upwards from the shooter. You can hold this key for rapid fireing
+Lasers destroy alien shipson contact.
+
+
+Gameplay:
+Aliens move horizontally across the screen, changing direction when reaching the edges.
+If an alien reaches the bottom row, the game ends with a "GAME OVER" message.
+Destroy all aliens to win the game, then you get in alert "YOU WIN" message.
+
+
+CODING ASPECTS (ADAPTED FROM THE REPO)
+
+Constants:
+grid: Represents the game grid container.
+resultDisplay: Represents the element displaying the score or game result.
+width: Defines the width of the game grid.
+currentShooterIndex: Tracks the index of the shooter's position.
+aliensRemoved: Stores indices of removed aliens.
+invadersId: Stores the ID of the interval controlling alien movement.
+isGoingRight: Indicates the direction of alien movement.
+direction: Represents the direction of alien movement (-1 for left, 1 for right).
+results: Tracks the player's score.
+
+Functions:
+draw(): Draws the alien invaders on the grid.
+remove(): Removes alien invaders from the grid.
+moveShooter(e): Moves the shooter based on keyboard input.
+moveInvaders(): Controls the movement of alien invaders.
+shoot(e): Handles shooting lasers from the shooter.
+
